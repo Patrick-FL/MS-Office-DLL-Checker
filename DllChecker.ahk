@@ -1,6 +1,6 @@
 /*
 	DllChecker.ahk
-	Author: Patrick Flöß
+	Author: Patrick F.
 	Version: 2019-02-09
 */
 
@@ -84,11 +84,11 @@ Loop % Array.length()
 		}
 	}
 }
-MsgBox DLL Prüfung abgeschlossen.
+MsgBox DLL Check completed.
 return
 
 DllcheckerKeinProb:
-MsgBox Keine Probleme in den DLL Dateien gefunden.
+MsgBox % "The dll file """ SuchDatei """ matched the expected checksum."
 return
 
 DllcheckerProb:
